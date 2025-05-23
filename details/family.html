@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styleP.css">
+</head>
+<body>
+    <div class="form-container">
+
+    <form>
+      <h1>Family Information</h1>
+      
+      <label>Father's Name:</label>
+      <input type="text" name="father" required>
+
+      <label>Phone:</label>
+      <input type="tel" name="phone" required>
+
+      <label>Mother's Name:</label>
+      <input type="text" name="mother" required>
+
+      <label>Phone:</label>
+      <input type="tel" name="phone" required>
+
+      <label>Brother's Name:</label>
+      <input type="text" name="Brother" required>
+
+      <label>Phone:</label>
+      <input type="tel" name="phone" required>
+
+      <label>Brother's Name:</label>
+      <input type="text" name="Brother" required>
+
+      <label>Phone:</label>
+      <input type="tel" name="Brother" required>
+
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+
+  <script>
+    document.getElementById('photoUpload').addEventListener('change', function(event) {
+  const file = event.target.files[0];
+  if (file) {
+    const reader = new FileReader();
+    reader.onload = function(e) {
+      document.getElementById('photoPreview').src = e.target.result;
+    };
+    reader.readAsDataURL(file);
+  }
+});
+
+  </script>
+</body>
+</html>

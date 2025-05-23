@@ -1,0 +1,108 @@
+* {
+      margin: 0;
+      padding: 0;
+    }
+
+    .body{
+      background-color: rgb(231,205,166);
+    }
+  
+    .row {
+      margin-top: 5%;
+      display: flex;
+      justify-content: space-between;
+      border-radius: 10px;
+      margin: 10px;
+    }
+
+    @media (max-width: 700px) {
+      .row {
+        flex-direction: column;
+      }
+    }
+
+    /* Details */
+    .details {
+      width: 80%;
+      margin: auto;
+      text-align: center;
+      padding: 50px;
+    }
+
+    .details-col {
+      flex-basis: 32%;
+      border-radius: 10px;
+      margin-bottom: 5px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .details-col img {
+      width: 100%;
+      border-radius: 10px;
+    }
+
+    .layer {
+      background: transparent;
+      height: 100%;
+      width: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      transition: 2s;
+    }
+
+    .layer:hover {
+      background: rgba(200, 0, 0, 0.7);
+    }
+
+    .layer h3 {
+      width: 100%;
+      font-weight: 500;
+      color: #fff;
+      font-size: 26px;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      position: absolute;
+      opacity: 0;
+      transition: 2s;
+    }
+
+    .layer:hover h3 {
+      bottom: 49%;
+      opacity: 1;
+    }
+
+    /* Footer */
+    .footer {
+      width: 100%;
+      text-align: center;
+      opacity: 1;
+    }
+
+    .footer h4 {
+      margin-bottom: 25px;
+      margin-top: 20px;
+      font-weight: 600;
+      color: rgb(0, 0, 0);
+      opacity: 1;
+    }
+
+    .icons .fab {
+      color: green;
+      margin: 0 13px;
+      cursor: pointer;
+      padding: 18px 0;
+    }
+
+    .far {
+      color: rgb(238, 4, 4);
+    }
+    button
+    {
+      border-radius: 10px;
+      margin: 10px;
+    }
+
+    

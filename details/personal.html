@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styleP.css">
+</head>
+<body>
+    <div class="form-container">
+        <form>
+        <h1>Personal Information</h1>
+        <label>Full Name:</label>
+        <input type="text" name="name" required>
+
+        <label>Date of Birth:</label>
+        <input type="date" name="dob" required>
+
+        <label>Age:</label>
+        <input type="number" name="age" required>
+
+        <label>Gender:</label>
+        <div class="radio-group">
+            <label><input type="radio" name="gender" value="Male" required> Male</label>
+            <label><input type="radio" name="gender" value="Female"> Female</label>
+            <label><input type="radio" name="gender" value="Other"> Other</label>
+        </div>
+
+        <label>Religion:</label>
+        <input type="text" name="religion" required>
+
+        <label>Marital Status:</label>
+        <input type="text" name="status" required>
+
+        <label>Education:</label>
+        <input type="text" name="education" required>
+
+        <label>Profession:</label>
+        <input type="text" name="profession" required>
+
+        <label>Father's Name:</label>
+        <input type="text" name="father" required>
+
+        <label>Mother's Name:</label>
+        <input type="text" name="mother" required>
+
+        <label>Siblings:</label>
+        <input type="number" name="Siblings" required>
+
+        <label>Phone:</label>
+        <input type="tel" name="phone" required>
+
+        <label>Email:</label>
+        <input type="email" name="email" required>
+
+        <label>Address:</label>
+        <textarea name="address" rows="3" required></textarea>
+
+        <button type="submit">Submit</button>
+        </form>
+
+        <div class="image-preview">
+            <img id="photoPreview" src="https://via.placeholder.com/150x180" alt="Your Photo">
+            <input type="file" id="photoUpload" accept="image/*">
+        </div>
+  </div>
+
+  <script>
+    document.getElementById('photoUpload').addEventListener('change', function(event) {
+  const file = event.target.files[0];
+  if (file) {
+    const reader = new FileReader();
+    reader.onload = function(e) {
+      document.getElementById('photoPreview').src = e.target.result;
+    };
+    reader.readAsDataURL(file);
+  }
+});
+
+  </script>
+</body>
+</html>

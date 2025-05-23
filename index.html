@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bibaho</title>
+    <link rel="shortcut icon" href="/images/bibaho.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    </head>
+  <body>
+    <!----Campus-->
+    <div class="body">
+
+      <section class="details">
+      <h1>Details</h1>
+      <p>
+        Create Your Perfect Marriage Biodata Now.
+      </p>
+      <div class="row">
+
+
+        <button id="myBtn">
+
+            <div class="details-col">
+                <img src="images/personal-information.png" alt="" />
+                <div class="layer">
+                    <h3>Personal</h3>
+                </div>
+            </div>
+
+        </button>
+
+        <button id="myBtn1">
+
+            <div class="details-col">
+                <img src="images/family.jpg" alt="" />
+                <div class="layer">
+                    <h3>Family</h3>
+                </div>
+            </div>
+
+        </button>
+
+        <button id="myBtn2">
+
+            <div class="details-col">
+                <img src="images/education.png" alt="" />
+                <div class="layer">
+                    <h3>Education</h3>
+                </div>
+            </div>
+
+        </button>
+            
+      </div>
+
+    <!--Modal Form open part-->
+
+    <!--Personal Modal-->
+
+      <div id="myModal" class="modal">
+
+  <!-- Modal content -->
+        <div class="modal-content">
+            <div class="modal-header">
+            <span class="close">&times;</span>
+            <h2>Marital Biodata Form</h2>
+            </div>
+            <div class="modal-body">
+                <iframe src="/details/personal.html" width="600" height="400"></iframe>
+            </div>
+            <div class="modal-footer">
+            <h3>Bibaho</h3>
+            </div>
+        </div>
+
+        </div>
+
+        <!--Family Modal-->
+      <div id="myModal1" class="modal">
+
+  <!-- Modal content -->
+        <div class="modal-content">
+            <div class="modal-header">
+            <span class="close close1">&times;</span>
+            <h2>Marital Biodata Form</h2>
+            </div>
+            <div class="modal-body">
+                <iframe src="/details/family.html" width="600" height="400"></iframe>
+            </div>
+            <div class="modal-footer">
+            <h3>Bibaho</h3>
+            </div>
+        </div>
+
+        </div>
+    <!--Education Modal-->
+    <div id="myModal2" class="modal">
+
+  <!-- Modal content -->
+        <div class="modal-content">
+            <div class="modal-header">
+            <span class="close close2">&times;</span>
+            <h2>Marital Biodata Form</h2>
+            </div>
+            <div class="modal-body">
+                <iframe src="/details/education.html" width="600" height="400"></iframe>
+            </div>
+            <div class="modal-footer">
+            <h3>Bibaho</h3>
+            </div>
+        </div>
+
+        </div>
+
+    <!-----Footer----->
+
+    <section class="footer">
+      <h4>Social Media</h4>
+
+      <div class="icons">
+        <a href="https://www.facebook.com/amir.hamja.3591267" target="_blank"><i class="fab fa-facebook"> </i
+        ></a>
+        <a href="https://www.instagram.com/khamir.hamja59561/" target="_blank"><i class="fab fa-instagram"></i
+        ></a>
+        <a href="https://wa.me/8801303816720" target="_blank" ><i class="fab fa-whatsapp"></i></a>
+        <a href="https://www.linkedin.com/in/amir-hamza5927/" target="_blank"><i class="fab fa-linkedin"></i></a>
+        <a href="https://x.com/KhAmirHamja1" target="_blank"><i class="fab fa-twitter"></i></a>
+      </div>
+      <p>Made with <i class="far fa-heart"> </i> by Amir</p>
+    </section>
+
+
+    </div>
+
+
+    <!--Modal Form JS-->
+    <script>
+        // Get the modal
+        var modal = document.getElementById("myModal");
+
+        // Get the button that opens the modal
+        var btn = document.getElementById("myBtn");
+
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close")[0];
+
+        // When the user clicks the button, open the modal 
+        btn.onclick = function() {
+        modal.style.display = "block";
+        }
+
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function() {
+        modal.style.display = "none";
+        }
+
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function(event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+        }
+    </script>
+
+    <!--Modal Form JS-->
+    <script>
+        // Get the modal
+        var modal1 = document.getElementById("myModal1");
+
+        // Get the button that opens the modal
+        var btn1 = document.getElementById("myBtn1");
+
+        // Get the <span> element that closes the modal
+        var span1 = document.getElementsByClassName("close1")[0];
+
+        // When the user clicks the button, open the modal 
+        btn1.onclick = function() {
+        modal1.style.display = "block";
+        }
+
+        // When the user clicks on <span> (x), close the modal
+        span1.onclick = function() {
+        modal1.style.display = "none";
+        }
+
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function(event) {
+        if (event.target == modal1) {
+            modal1.style.display = "none";
+        }
+        }
+    </script>
+
+    <!--Modal Form JS-->
+    <script>
+        // Get the modal
+        var modal2 = document.getElementById("myModal2");
+
+        // Get the button that opens the modal
+        var btn2 = document.getElementById("myBtn2");
+
+        // Get the <span> element that closes the modal
+        var span2 = document.getElementsByClassName("close2")[0];
+
+        // When the user clicks the button, open the modal 
+        btn2.onclick = function() {
+        modal2.style.display = "block";
+        }
+
+        // When the user clicks on <span> (x), close the modal
+        span2.onclick = function() {
+        modal2.style.display = "none";
+        }
+
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function(event) {
+        if (event.target == modal2) {
+            modal.style.display = "none";
+        }
+        }
+    </script>
+
+  </body>
+</html>
