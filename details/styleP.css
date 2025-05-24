@@ -80,3 +80,11 @@ button:hover {
   border: 2px solid #ccc;
   margin-bottom: 8px;
 }
+
+.eduTable{
+  border: solid black 1px;
+}
+
+.placeholder{
+  text-align: center;
+}
